@@ -10,6 +10,9 @@ img
     max-width: 1170px
     widht: 96%
     margin: auto
+    @media (max-width: 640px)
+        width: 90%
+    
 
 .button
     background-color: $buttons
@@ -47,3 +50,67 @@ img
         border-radius: 10px
         margin-left: 30px
         font-size: 13px
+
+.main
+    background-color: $grey
+    &-block
+        display: flex
+        padding: 40px 0px 15px 0px
+        @media (max-width: 1200px)
+            flex-direction: column
+    &-text
+        flex-basis: 50%
+        @media (max-width: 1200px)
+            margin-bottom: 30px
+        &__title
+            font-size: 41px
+            color: $accent
+            padding-right: 200px
+            line-height: 55px
+            margin: 45px 0px 20px 0px
+            @media (max-width: 1200px)
+                padding-right: 10px
+            @media (max-width: 640px)
+                font-size: 30px
+                line-height: 1.4
+        &__subtitle
+            font-size: 20px
+            line-height: 65px
+            color: $accent
+             @media (max-width: 640px)
+                font-size: 16px
+                line-height: 1.4
+    &-image
+        margin-right: -55px
+        @media (max-width: 1200px)
+            width: 100%
+
+    &-list
+        margin: 40px 0px 0px 0px
+        @media (max-width: 640px)
+            margin: 10px 0px 0px 0px    
+        &__item
+            display: flex 
+            align-items: center
+            margin-bottom: 20px
+            @media (max-width: 640px)
+                margin-bottom: 15px
+        &__image
+            width: 40px
+            height: 40px
+            border: 2px solid #ffd200    
+            border-radius: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 30px
+        &__text
+            font-size: 14px
+            line-height: 24px
+            color: $accent
+            max-width: 300px
+            @media (max-width: 640px)
+                font-size: 12px
+                max-width: 250px
+            
+            
