@@ -8,8 +8,9 @@ img {
 
 .container {
   max-width: 1170px;
-  widht: 96%;
+  width: 96%;
   margin: auto;
+  
 }
 
 .button {
