@@ -1,17 +1,19 @@
 @import "vars"
+@import "fonts"
+
 
 body
-    font-family: sans-serif
+    +reg
 
 img
     max-width: 100%
 
 .container
     max-width: 1170px
-    widht: 96%
+    width: 96%
     margin: auto
     @media (max-width: 640px)
-        widht: 90%
+        width: 90%
        
     
 
@@ -39,18 +41,21 @@ img
         color: $accent
         font-size: 13px
         font-weight: 400
+        +bold
     &__phone
         color: $accent
         font-size: 20px
         font-weight: 400
         text-decoration: none
         display: block
-        margin-top: 5px 
+        margin-top: 5px
+        +bold
     &__button
         padding: 18px 47px
         border-radius: 10px
         margin-left: 30px
         font-size: 13px
+        +bold
 
 .main
     background-color: $grey
@@ -59,6 +64,7 @@ img
         padding: 40px 0px 15px 0px
         @media (max-width: 1200px)
             flex-direction: column
+            padding: 0px 0px 0px 0px
     &-text
         flex-basis: 50%
         @media (max-width: 1200px)
@@ -69,6 +75,7 @@ img
             padding-right: 200px
             line-height: 55px
             margin: 45px 0px 20px 0px
+            +bold
             @media (max-width: 1200px)
                 padding-right: 10px
             @media (max-width: 640px)
@@ -78,7 +85,8 @@ img
             font-size: 20px
             line-height: 65px
             color: $accent
-             @media (max-width: 640px)
+            +bold
+            @media (max-width: 640px)
                 font-size: 16px
                 line-height: 1.4
     &-image
@@ -87,9 +95,10 @@ img
             width: 100%
 
     &-list
-        margin: 40px 0px 0px 0px
+        margin: 40px 0px 0px -40px
+        padding: -30px 0px 0px 0px 
         @media (max-width: 640px)
-            margin: 10px 0px 0px 0px    
+            margin: 10px 0px 0px -40px    
         &__item
             display: flex 
             align-items: center
@@ -99,8 +108,6 @@ img
         &__image
             width: 40px
             height: 40px
-            border: 2px solid #ffd200    
-            border-radius: 50px
             display: flex
             align-items: center
             justify-content: center
