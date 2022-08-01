@@ -280,4 +280,33 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+}
+.offer-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+@media (max-width: 950px) {
+  .offer-text {
+    flex-direction: column;
+  }
+}
+.offer-dodatek {
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  width: 168px;
+}
+@media (max-width: 950px) {
+  .offer-dodatek {
+    width: 200px;
+    margin-bottom: 15px;
+  }
+}
+.offer__tel {
+  text-decoration: none;
+  color: #333;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  margin-top: 0px;
 }/*# sourceMappingURL=style.css.map */

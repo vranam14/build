@@ -187,3 +187,23 @@ img
     &__button
         width: 100%
         min-height: 70px
+    &-text
+        display: flex
+        justify-content: space-between
+        margin-top: 31px
+        @media (max-width: 950px)
+            flex-direction: column
+    &-dodatek
+        font-size: 15px
+        line-height: 24px
+        color: $accent
+        width: 168px
+        @media (max-width: 950px)
+            width: 200px
+            margin-bottom: 15px
+        
+    &__tel
+        text-decoration: none 
+        color: $accent
+        +bold
+        margin-top: 0px
