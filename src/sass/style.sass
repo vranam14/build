@@ -37,6 +37,13 @@ img
     margin-bottom: 30px
     font-size: 15px
 
+.section-title
+    font-size: 30px
+    +bold
+    text-align: center
+    line-height: 45px
+ 
+
 .header
     padding: 20px 0px
     &-block
@@ -209,6 +216,29 @@ img
         +bold
         margin-top: 0px
 
+.portfolio
+    padding: 100px 0px
+    background: $grey url('../img/portfolio-bg.png') left repeat-y
+    background-size: 50%
+
+    &__title
+        margin-bottom: 100px
+        color: $accent
+
+    &__arrows
+        max-width: 120px
+        display: flex
+        justify-content: space-between
+        margin: auto
+        margin-top: 70px
+.arrows-left, .arrows-right
+    cursor: pointer 
+
+.slider
+    &__image
+        margin: auto
+
+
 .modal
     position: fixed
     left: 0
@@ -232,4 +262,6 @@ img
             top: 0
             right: 0
             
+
+
             
