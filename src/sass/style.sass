@@ -42,7 +42,12 @@ img
     +bold
     text-align: center
     line-height: 45px
- 
+
+.section-subtitle
+    color: #000
+    font-size: 20px
+    text-align: center
+    display: block
 
 .header
     padding: 20px 0px
@@ -237,6 +242,86 @@ img
 .slider
     &__image
         margin: auto
+
+.price
+    padding: 100px 0px
+    @media (max-width: 768px)
+        padding: 50px 0px
+    &__title
+        margin-bottom: 60px
+        @media (max-width: 768px)
+            margin-bottom: 30px
+    &__subtitle
+        margin-bottom: 60px
+        
+    &__card
+        margin-bottom: 30px
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 768px)
+        margin: auto
+        
+
+.card
+    text-align: center
+    border: 1px solid $border-card
+    transition: 0.5s
+    @media (max-width: 768px)
+        justify-content: space-between
+    @media (max-width: 768px)
+        margin: auto
+    &:hover
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+        .card__image::before
+            opacity: 1
+    &__text
+        padding: 40px
+    &__title
+        margin-top: 0px
+        font-size: 18px
+        margin-bottom: 30px
+    &__image
+        position: relative
+        img
+            display: block
+        &::before
+            content: ''
+            position: absolute  
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+            opacity: 0 
+            transition: .5s
+    &__link
+        text-decoration: none
+        color: $accent
+        +bold
+        display: inline-block
+        font-size: 16px
+        position: relative
+        &:hover
+            &::after
+                height: 13px
+                
+        &::after
+            content: ''
+            width: 100%
+            height: 3px
+            background-color: $main-color
+            display: block
+            position: absolute
+            z-index: -1
+            bottom: -4px
+            left: 0
+            transition: 0.5s
+
+            
+
 
 
 .modal
