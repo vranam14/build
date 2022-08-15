@@ -460,16 +460,40 @@ img {
 .steps {
   padding-bottom: 120px;
 }
+@media (max-width: 768px) {
+  .steps {
+    padding-bottom: 60px;
+  }
+}
 .steps__title {
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .steps__title {
+    font-size: 18px;
+    line-height: normal;
+    max-width: 220px;
+    margin: auto;
+  }
+}
 .steps__subtitle {
   margin-bottom: 75px;
+}
+@media (max-width: 768px) {
+  .steps__subtitle {
+    font-size: 11px;
+    margin-top: 30px;
+  }
 }
 
 .icons {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .icons {
+    flex-direction: column;
+  }
 }
 
 .icon {
@@ -488,6 +512,16 @@ img {
   width: 72px;
   height: 25px;
   background-image: url("../img/steps-arrow.png");
+}
+@media (max-width: 1000px) {
+  .icon::after {
+    right: -55px;
+  }
+}
+@media (max-width: 768px) {
+  .icon::after {
+    display: none;
+  }
 }
 .icon::after:last-child {
   display: none;
@@ -514,6 +548,12 @@ img {
   font-size: 14px;
   line-height: 20px;
 }
+@media (max-width: 768px) {
+  .icon__text {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
 
 .notice {
   background-color: #ffc000;
@@ -526,6 +566,12 @@ img {
   line-height: 50px;
   font-family: "Museo Sans Light", sans-serif;
   font-weight: 300;
+}
+@media (max-width: 768px) {
+  .notice__text {
+    font-size: 18px;
+    line-height: normal;
+  }
 }
 
 .modal {

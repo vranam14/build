@@ -322,14 +322,27 @@ img
 
 .steps
     padding-bottom: 120px
+    @media (max-width: 768px)
+        padding-bottom: 60px
     &__title
         margin-bottom: 60px
+        @media (max-width: 768px)
+            font-size: 18px
+            line-height: normal
+            max-width: 220px
+            margin: auto
+            
     &__subtitle
         margin-bottom: 75px
+        @media (max-width: 768px)
+            font-size: 11px
+            margin-top: 30px
             
 .icons
     display: flex
     justify-content: space-between
+    @media (max-width: 768px)
+        flex-direction: column
 
 .icon
     text-align: center
@@ -346,8 +359,13 @@ img
         width: 72px
         height: 25px
         background-image: url('../img/steps-arrow.png')
+        @media (max-width: 1000px)
+            right: -55px
+        @media (max-width: 768px)
+            display: none
         &:last-child
             display: none
+            
     &__image
         width: 100px
         height: 100px
@@ -367,6 +385,9 @@ img
         display: inline-block
         font-size: 14px
         line-height: 20px
+        @media (max-width: 768px)
+            margin-bottom: 30px
+            margin-top: 20px
         
 .notice
     background-color: $second
@@ -377,6 +398,9 @@ img
         font-size: 32px
         line-height: 50px
         +reg
+        @media (max-width: 768px)
+            font-size: 18px
+            line-height: normal
 
 
 .modal
